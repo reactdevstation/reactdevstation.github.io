@@ -3,6 +3,8 @@ layout: post
 title: Generate a table of content
 tags: [toc.js, kramdown, Markdown, Customization]
 author: sylhare
+published: false
+
 excerpt_separator: <!--more-->
 ---
 

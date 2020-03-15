@@ -18,3 +18,7 @@ unknown:
   name: Unknown
   avatar:
   url:
+curator:
+  name: "The curator"
+  avatar: "assets/img/avatars/sylhare_avatar.png"
+  url:

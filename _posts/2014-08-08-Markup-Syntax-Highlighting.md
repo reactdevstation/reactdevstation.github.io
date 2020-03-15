@@ -3,11 +3,12 @@ layout: post
 title: "Markup: Syntax Highlighting"
 author: mmistakes
 tags: [code]
+published: false
+
 ---
 
 From Michael's Rose [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/markup-syntax-highlighting).
 Syntax highlighting is a feature that displays source code, in different colors and fonts according to the category of terms. This feature facilitates writing in a structured language such as a programming language or a markup language as both structures and syntax errors are visually distinct. [Highlighting](http://en.wikipedia.org/wiki/Syntax_highlighting) does not affect the meaning of the text itself; it is intended only for human readers.
-
 
 ### GFM Code Blocks
 
@@ -23,23 +24,34 @@ GitHub Flavored Markdown [fenced code blocks](https://help.github.com/articles/c
 
 {% highlight scss linenos %}
 .highlight {
-  margin: 0;
-  padding: 1em;
-  font-family: $monospace;
+margin: 0;
+padding: 1em;
+font-family: $monospace;
   font-size: $type-size-7;
-  line-height: 1.8;
+line-height: 1.8;
 }
 {% endhighlight %}
 
 ```html
-{% raw %}<nav class="pagination" role="navigation">
+{% raw %}
+<nav class="pagination" role="navigation">
   {% if page.previous %}
-    <a href="{{ site.url }}{{ page.previous.url }}" class="btn" title="{{ page.previous.title }}">Previous article</a>
+  <a
+    href="{{ site.url }}{{ page.previous.url }}"
+    class="btn"
+    title="{{ page.previous.title }}"
+    >Previous article</a
+  >
+  {% endif %} {% if page.next %}
+  <a
+    href="{{ site.url }}{{ page.next.url }}"
+    class="btn"
+    title="{{ page.next.title }}"
+    >Next article</a
+  >
   {% endif %}
-  {% if page.next %}
-    <a href="{{ site.url }}{{ page.next.url }}" class="btn" title="{{ page.next.title }}">Next article</a>
-  {% endif %}
-</nav><!-- /.pagination -->{% endraw %}
+</nav>
+<!-- /.pagination -->{% endraw %}
 ```
 
 ```ruby
@@ -66,18 +78,18 @@ end
 
 Indentation matters. Be sure the indent of the code block aligns with the first non-space character after the list item marker (e.g., `1.`). Usually this will mean indenting 3 spaces instead of 4.
 
-1. Do step 1.
-2. Now do this:
+1.  Do step 1.
+2.  Now do this:
 
-   ```ruby
-   def print_hi(name)
-     puts "Hi, #{name}"
-   end
-   print_hi('Tom')
-   #=> prints 'Hi, Tom' to STDOUT.
-   ```
-        
-3. Now you can do this.
+    ```ruby
+    def print_hi(name)
+      puts "Hi, #{name}"
+    end
+    print_hi('Tom')
+    #=> prints 'Hi, Tom' to STDOUT.
+    ```
+
+3)  Now you can do this.
 
 ### GitHub Gist Embed
 
@@ -86,4 +98,3 @@ An example of a Gist embed below.
 <script src="https://gist.github.com/mmistakes/77c68fbb07731a456805a7b473f47841.js"></script>
 
 ### Source
-

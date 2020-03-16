@@ -37,7 +37,7 @@ This command will create a react project with all the necessary things required.
 
 After this command following files and directory structure will be created.
 
-![react-app project directory](/assets/img/posts/1_directory.png)
+![react-app project directory](/assets/img/posts/directory1.png)
 
 Start this project by navigating to the **test directory**. After ensuring your terminal is in the exact directory as the one that contains **package.json** file, run the following command:
 

@@ -3,7 +3,7 @@ layout: default
 ---
 {% include share_thumbnail.html page=page %}
 
-<article {% if page.feature-img or page.color %}class="feature-image"{% endif %}>
+<article {% if page.feature-img or page.header-color %}class="feature-image"{% endif %}>
   <header id="main" style="">
     {% unless page.hide_title %}
       <h1 id="{{ page.title | cgi_escape }}" class="title">{{ page.title }}</h1>
@@ -48,9 +48,14 @@ layout: default
     div#post-nav a { color: {{ page.color }} !important; }
     footer a { color: {{ page.color }} !important; }
     .site-header nav a:hover {  color: {{ page.color }} !important; }
-    header#main { background-color: {{ page.color }} !important; }
+    header#main { background-color: {{ page.header-color }} !important; }
   {% endif %}
 
+  {% if page.header-color %}
+    header#main { background-color: {{ page.header-color }} !important;
+   }
+   
+  {% endif %}
   header#main {
     background-repeat:no-repeat;
     {% if page.feature-img %} background-image: url('{{ page.feature-img | relative_url }}');

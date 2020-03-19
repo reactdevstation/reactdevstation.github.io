@@ -2,7 +2,7 @@
 layout: post
 title: React Jumpstart
 feature-img: "assets/img/react-logo.png"
-image: "assets/img/thumbnails/react-thumbnail.png" #seo tag
+image: "assets/img/thumbnails/react.png" #seo tag
 tags: [React, JavaScript]
 excerpt_separator: <!--more-->
 # published: false

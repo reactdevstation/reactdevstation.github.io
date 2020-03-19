@@ -25,7 +25,6 @@ The purpose of React is to create **Single Page Applications (SPA)**. So basical
 ### Getting Started
 Let's start off by creating React project. First, you should have [Node]("https://nodejs.org/") and [Yarn]("https://yarnpkg.com/") installed. I prefer Yarn over NPM because it is usually faster than NPM. Also you can have [Visual Studio Code]("https://code.visualstudio.com") as an IDE. 
 
-
 After that, you will be using the Create React App utility to create react project which is an officially supported method and automatically does alot of things that are considered best approaches and hectic to do manually. First use a Terminal of your choice to navigation to your desired directory or use VS Code to open desired folder if you want to use terminal from with VS Code. Shortcut to open terminal in VS Code is **Cntrl+J**. After that you can enter the following command:
 
 ```bash

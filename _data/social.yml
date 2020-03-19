@@ -33,4 +33,4 @@ share:
   reddit: true
   linkedin: true
   wordpress:
-  email: true
+  email: false

@@ -63,8 +63,8 @@ let ls1 = [1, 4, 5, 7, 9]
 let ls2 = [1, 4, 5, 20, 9]
 
 // callback will return true if an item is less than 10
-ls1.every(item=> item < 10 ) // returns true
-ls2.every(item=> item < 10 ) // returns false
+ls1.every(item => item < 10 ) // returns true
+ls2.every(item => item < 10 ) // returns false
 ```
 
 >The some() method tests whether at least one element in the array passes the test set in the callback function. It also returns a Bool.
@@ -76,8 +76,8 @@ let ls1 = [1, 4, 5, 7, 9]
 let ls2 = [1, 3, 5, 7, 9]
 
 // callback will return true if at-lease on even number is present
-ls1.some(item=> item % 2 === 0 ) // returns true
-ls2.some(item=> item % 2 === 0) // returns false
+ls1.some(item => item % 2 === 0 ) // returns true
+ls2.some(item => item % 2 === 0) // returns false
 ```
 
 ### sort
@@ -86,7 +86,7 @@ ls2.some(item=> item % 2 === 0) // returns false
 If we try to sort an array of numbers, we will get wrong result because number values are first converted to string and then compared. So we have to provide our custom comparator. We can also define comparators for comparing certain values in an object
 ```javascript
 let numberComparator = (a, b) => a - b
-let arr = [20,10,4,1,100]
+let arr = [20, 10, 4, 1, 100]
 
 // wrong order
 arr.sort()
@@ -101,9 +101,9 @@ console.log(arr) // prints [1, 4, 10, 20, 100]
 > The reduce() method executes a reducer function as a callback on each element of the array, resulting in a single output value.
 
 ```javascript
-let array1 = [1, 2, 3, 4];
+let array1 = [1, 2, 3, 4]
 let reducer = (accumulator, currentValue) => accumulator + currentValue;
-console.log(array1.reduce(reducer));
+console.log(array1.reduce(reducer))
 
 let arr = [{id: 1, price: 10}, {id:2, price: 20}, {id:3, price: 30}]
 
@@ -131,16 +131,16 @@ Its parameters are
 3. new elements to be added
 
 ```javascript
-let fruits = ['Apple', 'Orange', 'Mango'];
+let fruits = ['Apple', 'Orange', 'Mango']
 
 // when we want to add something, we specify delete count 0
-fruits.splice(1, 0, 'Strawberry'); // ['Apple', 'Strawberry' ,'Orange', 'Mango']
+fruits.splice(1, 0, 'Strawberry') // ['Apple', 'Strawberry' ,'Orange', 'Mango']
 // removing element at index 3
-fruits.splice(3, 1); // ['Apple', 'Strawberry' ,'Orange']
+fruits.splice(3, 1) // ['Apple', 'Strawberry' ,'Orange']
 // replacing element
 fruits.splice(2, 1, 'Melon') // ['Apple', 'Strawberry' ,'Melon']
 // adding multiple items
-fruits.splice(0,0, 'Watermelon', 'Date') // ['Watermelon', 'Date' ,'Apple', 'Strawberry' ,'Orange']
+fruits.splice(0, 0, 'Watermelon', 'Date') // ['Watermelon', 'Date' ,'Apple', 'Strawberry' ,'Orange']
 ```
 We had to add a lots of examples because the splice() method can do a lots of things. First we can add items to the array, for that we have to set delete count as 0. Second we can replace elements, by adding elements at index and specifying delete index. We can delete elements by providing no elements and delete count.
 
@@ -152,8 +152,8 @@ Splice only returns the elements that are deleted from the array, otherwise it r
 >The pop() method removes the last element from original array and returns that element.
 
 ```javascript
-let fruits = ['Apple', 'Orange', 'Mango'];
-fruits.push('Melon'); // ['Apple', 'Orange', 'Mango', Melon]
+let fruits = ['Apple', 'Orange', 'Mango']
+fruits.push('Melon') // ['Apple', 'Orange', 'Mango', Melon]
 let length = fruits.push('Date', 'Strawberry') // ['Apple', 'Orange', 'Mango', Melon, 'Date', 'Strawberry']
 
 // removing element from the end
@@ -165,7 +165,7 @@ fruits.pop() // ['Apple', 'Orange', 'Mango', Melon, 'Date']
  > The shift() method adds an element to the start of the original array and returns the length of the array.
 
 ```javascript
-let fruits = ['Apple', 'Orange', 'Mango'];
+let fruits = ['Apple', 'Orange', 'Mango']
 fruits.shift() // ['Orange', 'Mango']
 
 fruits.unshift('Date', 'Melon') // ['Date', 'Melon', 'Orange', 'Mango']

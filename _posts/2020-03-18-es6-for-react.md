@@ -40,12 +40,12 @@ Just like any JS function, arrow functions can also be passed as parameters. The
 #### As a statement
 In this case, a single statement is executed from the arrow function. A single statement can be represented using round braces () or no braces at all.
 
-*Note: Return keyword is optional for returning data, when using this variant*
+*Note: Return keyword will give error when using this variant*
 
 ```javascript
 let log = () => console.log('Hello') 
-let getMessage = (message) => 'Hello ' + message // return keyword is optional
-let getMessageGlobal = (message) => ('Hello ' + message) // return keyword is optional
+let getMessage = (message) => 'Hello ' + message // explicit return keyword will give error
+let getMessageGlobal = (message) => ('Hello ' + message) // explicit return keyword will give error
 
 log() // prints 'Hello'
 getMessage('React') // return string with value 'Hello React'

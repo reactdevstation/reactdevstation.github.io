@@ -99,12 +99,11 @@ export default function App() {
     // TODO
     const handleAuth = async () => {}
     return (
-            <View style={styles.container}>
-                <TouchableOpacity onPress={handleAuth} >
-                    <Text>Facebook Login</Text>
-                 </TouchableOpacity>
-            </View>
-    )
+        <View style={styles.container}>
+            <TouchableOpacity onPress={handleAuth} >
+                <Text>Facebook Login</Text>
+                </TouchableOpacity>
+        </View>)
 }
 ```
 

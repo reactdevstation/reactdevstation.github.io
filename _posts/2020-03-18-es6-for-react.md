@@ -2,7 +2,8 @@
 layout: post
 title: ES6 Features for React
 image: "assets/img/thumbnails/es6.png" #seo tag
-tags: [React, JavaScript]
+tags: [ES6, JavaScript]
+
 header-color: rgb(33, 33, 33);
 
 excerpt_separator: <!--more-->

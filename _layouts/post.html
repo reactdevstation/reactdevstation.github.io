@@ -50,6 +50,12 @@ layout: default
     .site-header nav a:hover {  color: {{ page.color }} !important; }
     header#main { background-color: {{ page.header-color }} !important; }
   {% endif %}
+  {% if page.hover_color %}
+    
+    .share-buttons li a:hover{color: {{page.hover_color}} !important}
+    a.button:hover{background: {{page.color}} !important; border: 1px solid {{page.color}} !important}
+    a.button:hover p {color: #fff !important}
+  {% endif %}
 
   {% if page.header-color %}
     header#main { background-color: {{ page.header-color }} !important;

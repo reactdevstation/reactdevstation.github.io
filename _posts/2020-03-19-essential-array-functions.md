@@ -3,7 +3,7 @@ layout: post
 title: Essential Array Functions
 header-color: rgb(33, 33, 33);
 image: "assets/img/thumbnails/react.png" #seo tag
-tags: [React, JavaScript]
+tags: [ES6, JavaScript]
 excerpt_separator: <!--more-->
 # published: false
 ---
@@ -111,6 +111,7 @@ let reducer = (accumulator, currentValue) => ({ totalPrice: accumulator.totalPri
 // passing a default value to the accumulator
 arr.reduce(reducer, {totalPrice: 0})
 ```
+
 On the start, accumulator gets the first element of array if accumulator is not provided in the reducer which is second parameter. But after that, accumulator gets the returned values of the reducer. In the first example, we are getting a simple sum. In the second example, we wanted to spice things up a little by creating an object and incrementally increasing its totalPrice property.
 
 
@@ -122,6 +123,7 @@ let arr = ['apple', 'orange', 'mango']
 console.log(arr.includes('orange')) // true
 console.log(arr.includes('strawberry')) // false
 ```
+
 ### splice
 > The splice() method allows us to remove, add or modify elements of an array in-place.
 

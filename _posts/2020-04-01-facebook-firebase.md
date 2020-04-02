@@ -4,7 +4,7 @@ title: Facebook OAuth using Firebase in React Native & Expo
 header-color: rgb(33, 33, 33)
 color: rgb(255, 111, 0)
 hover_color: rgb(255, 71, 0)
-image: "assets/img/thumbnails/firebase-series.png" #seo tag
+image: "assets/img/thumbnails/firebase.png" #seo tag
 feature-img: "assets/img/firebase.png"
 tags: [React Native, Expo, Firebase]
 excerpt_separator: <!--more-->

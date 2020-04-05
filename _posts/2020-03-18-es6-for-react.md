@@ -21,7 +21,7 @@ In this post, we are going to take a look at common ES6 features that are very h
 
 We use the back quote characters ` to represent a template string. We can create multi-line strings without adding special characters like \n. Also we can add variable values by putting a variable between ${}.
 
-```javascript
+```jsx
 let total   = 100
 let product = 'Dell laptop'
 let message = `The price for product ${product} is ${total}
@@ -43,7 +43,7 @@ In this case, a single statement is executed from the arrow function. A single s
 
 *Note: Return keyword will give error when using this variant*
 
-```javascript
+```jsx
 let log = () => console.log('Hello') 
 let getMessage = (message) => 'Hello ' + message // explicit return keyword will give error
 let getMessageGlobal = (message) => ('Hello ' + message) // explicit return keyword will give error
@@ -57,7 +57,7 @@ In  this case, a whole code block is executed from teh arrow function. The code 
 
 *Note: We have to mention return keyword, if we want to return something in this variant*
 
-```javascript
+```jsx
 let mulBy10 = (input) => {
     let result = input * 10
     return result
@@ -70,7 +70,7 @@ mulBy10(100) // returns a number with value 1000
 > Spread operator ... allows spreading(actual copy not just a reference) of elements in an iterable collection (array or string) to individual elements and function parameters.
 
 
-```javascript
+```jsx
 let params = ['name', 'age']
 let fullParams = ['device', 'location', ...params] // will become ['name', 'age','device', 'location']
 
@@ -82,7 +82,7 @@ let newObj = {height: 6, ...obj} // {height: 6, name: 'bob', className: 10}
 These features provide a shorter way of modifying/ creating properties in an object.
 #### Property shorthand
 Property shorthand syntax provides a shorter way to adding/modifying properties in an object.
-```javascript
+```jsx
 let x = 1, y = 10,  z = 20
 let demo = {x, y} // {x:1, y:10}
 // mixing it up with the spread operator to add new properties
@@ -93,7 +93,7 @@ In React, we'll mostly use the **property shorthand** to create new objects or a
 > Computed property names are dynamic property names.
 
 This is a very interesting feature that adds a lots of conciseness and readability in the code. 
-```javascript
+```jsx
 let propertyName = 'anything' // we can even use template literal here `name${someVar}`
 let myObject     = {name: 'Bob', title:'The builder', [propertyName]: 100} // {anything: 100, name: 'Bob', title: 'The builder'}
 
@@ -104,7 +104,7 @@ this.setState{[event.target.name]: event.target.value}
 Destructuring allows us to get values from arrays and objects into variables.
 #### Array matching
 In this case, we get values out of array into variables. For it, we use square braces around the variable names.
-```javascript
+```jsx
 let ls = [10,15,5,1,2]
 let [a, b] = ls 
 console.log(a , ' ', b) // 10 15
@@ -114,14 +114,14 @@ console.log(a , ' ', b) // 15 10
 If the array length is less than the variable counts we are trying to get out of, then they'll get undefined value.
 #### Object matching
 In this case, we get values out of object into variables. For it, we use curly braces around the variable names.
-```javascript
+```jsx
 let someObj = {name: 'Bob', className: 10} // class is a keyword in JS so we have to use className
 let {name, className} = someObj
 console.log(name, ' ', className) // Bob 10
 ```
 #### Parameter context matching
 We can use the same concepts as before to the get values from objects and arrays into parameters.
-```javascript
+```jsx
 function getParameterFromArray( [a, b, c] ){
   console.log(a,b,c)
 }
@@ -136,7 +136,7 @@ getParameterFromObject({name: 'Bob', className: 10, height: 6.0}) // prints Bob 
 ES6 also allows us to **block level scoping** using let and const keyword for variables creation.
 So basically, JS has function level scoping and that can be quite limiting or result in unexpected behavior for people that are used to block level scoping. 
 Block level scoping works on code blocks like loops, if conditions etc. Using let and const to declare a variable we can create block scoped variables. I'll write a post about all the details and gotchas for let and const in a separate post. 
-```javascript
+```jsx
 var myFunction = null // using var here only for demo
 if(1==1) // Opening a Block
 { 
@@ -157,7 +157,7 @@ In order to check the difference between var and let, replace let variable with 
 
 ### Declaring classes
 ES6 also introduces proper syntax for creating classes. Previously we had to add methods and properties using prototypes on function objects.
-```javascript
+```jsx
 class Test(){
   constructor(){
     this.x = 10 // creating properties

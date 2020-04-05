@@ -148,6 +148,15 @@ We had to add a lots of examples because the splice() method can do a lots of th
 
 Splice only returns the elements that are deleted from the array, otherwise it returns an empty array. All the modifications happen in original array.
 
+### concat
+> The concat() method is used to add data to an array. It can also be used to merge two arrays. This method does not change the existing arrays, but instead returns a new array.
+
+```javascript
+let a = [1, 2, 3]
+let b = 4
+let c = a.concat(b) // [1, 2, 3, 4]
+```
+
 ### push and pop
 >The push() method adds one or more elements to the end of original array and returns the new length of the array.
 

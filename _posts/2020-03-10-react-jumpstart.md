@@ -54,7 +54,7 @@ Okay, so lets proceed. The entry point of app is **index.js**, which is importin
 Lets start off by creating a folder named **components** within the **src folder**. In that folder create a file name **Cafe.js** in the **components folder**. Open that file and write the following code. 
 
 We are going to take a look at 2 type of components in React, that are **Class based Components** and **Function based Components**. 
-```javascript  
+```jsx  
 import React from 'react'
 
 // This is how we create class based components in react; they offer full life-cycle methods and state management
@@ -109,7 +109,7 @@ Any React Component can be used as a Tag, for example we are using Greetings and
 Also note the last statement in the code. Export statement allows us to export modules in JS. 
 
 But we still haven't used the Cafe component in our App.  Replace the following code in the App.js.
-```javascript
+```jsx
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
@@ -134,7 +134,7 @@ We first import the Cafe component using relative paths. After that, we use the 
 > JSX allows us to write JavaScript expressions within HTML code. JSX stands for JavaScript XML.
 
 Ok so in the last section, we took a look at the JSX. Its time to view it in details. Modify the **App component** in the **app.js** file as below:
-```javascript 
+```jsx 
 function App() {
   let hours = new Date().getHours() // get the hours from current datetime
   return (
@@ -154,7 +154,7 @@ The first thing to know is that, whenever we open the **curly brackets {}** with
 > State object is used to store values and is provided by React.Component. Whenever the state of a component changes, it react also re-renders that component. 
 
 State is a vital concept in the React. It's quite easy to understand the basics, but it takes some practice to create a mindset for dealing with state. Lets modify our **Cafe component** to make use of state.
-```javascript
+```jsx
 class Cafe extends React.Component {
     constructor(props) {
         super(props)
@@ -199,7 +199,7 @@ The flow of a React component is **"Mounting, Updating and then Unmounting"**. M
 
 ### Event Handling
 So far, we were just a passive watcher. But now we will interact with the app. We are going to add an onClick event handler in the Cafe component. To keep it concise, life-cycle methods are not shown in this example.
-```javascript
+```jsx
 class Cafe extends React.Component {
     constructor(props) {
         super(props)
@@ -233,7 +233,7 @@ Another thing to note, when we create a function withing a class, it becomes it'
 
 ### Displaying List of Elements
 Ok so this time we are going to see how to display a list of items in React using JavaScript array map function and ES 6 arrow function syntax.
-```javascript
+```jsx
 const DATA = [
     { name: 'Bread', price: 20 },
     { name: 'Tea', price: 10 },
@@ -265,7 +265,7 @@ We added some more code to the render method to display a list of products in ou
 
 ### Forms
 Okay, so this time we are going to implement a typical flow of information in React. We will understand the mindset needed to deal with states and how components interact with each other.
-```javascript
+```jsx
 class Cafe extends React.Component {
     constructor(props) {
         super(props)
@@ -325,7 +325,7 @@ Ok so, we did some restructuring to the **Cafe component**. In this example, we 
 
 
 Now lets take a look at the **ProductForm** component and see how we deal with form inputs using React.
-```javascript
+```jsx
 class ProductForm extends React.Component {
     constructor(props) {
         super(props)

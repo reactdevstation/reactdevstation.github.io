@@ -8,6 +8,7 @@ image: "assets/img/thumbnails/firebase.png" #seo tag
 feature-img: "assets/img/firebase.png"
 tags: [React Native, Expo, Firebase]
 excerpt_separator: <!--more-->
+author: rustyonrampage
 # published: false
 ---
 User authentication is one of the key features required in any application. Google's Firebase provides really convenient and secure set of tools that allow us to authenticate and create users in our system. The best thing about Firebase is how easy it is to integrate OAuth with popular social networks. In this post, we are going to integrate Facebook OAuth into React Native + Expo using Firebase. 
@@ -44,7 +45,7 @@ After you have created the app, you have to add some configs to it, that allow f
 3. Then add the ios platform using above method. You'll have to add this exact value **host.exp.Exponent** to the **Bundle ID** setting.
 ![IOS setting](/assets/img/posts/fb/3.png)
 
-> Note: The settings we have done so far are for **expo client app** that we are using for development purposes. However, when we create **build apps aka standalone android and ios apps**, then we also have to add some more settings. I'll create a separate post for that purpose.
+> Note: The settings we have done so far are for **expo client app** that we are using for development purposes. However, when we create **build apps also known as standalone android and ios apps**, then we also have to add some more settings. I'll create a separate post for that purpose.
 
 ### Setting up Firebase Developer Console
 I am assuming, you have already created a project and app on [Firebase](https://firebase.google.com/). 
